@@ -1,0 +1,92 @@
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    --primary-color: #F8EDE3;
+    --Title--color: #292019;
+    --CTA--color: #B91122;
+
+     /*========== Font and typography ==========*/
+     --title-font: 'Abhaya Libre', sans-serif;;
+     --body-font: 'Poppins', sans-serif;
+}
+
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    margin: 3rem 2rem 1rem 2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*=============== HEADER ===============*/
+.header{
+    padding: 0 5px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*=============== NAV ===============*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 4rem 1rem 4rem;
+}
+
+.logo a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: gray;
+}
+
+.nav__links{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav__item{
+    font-size: 0.90rem;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/*=============== HOME ===============*/
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__text h1{
+    font-family: var(--title-font);
+    font-size: 5rem;
+}
