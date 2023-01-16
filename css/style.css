@@ -221,6 +221,9 @@ a{
     padding: 2rem 10rem;
     gap: 5rem;
 }
+.img-description{
+    width: 70%;
+}
 
 .text-descrip{
     display: flex;
@@ -251,6 +254,12 @@ a{
     align-items: center;
     display: flex;
     flex-direction: row;
+}
+.img-chart img{
+    width: 40%;
+}
+.img-chart p{
+    font-size: 12px;
 }
 
 .logos__clients{
