@@ -214,6 +214,11 @@ a{
 }
 
 /*=============== ABOUT ===============*/
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .product-description{
     display: flex;
     align-items: center;
