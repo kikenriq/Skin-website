@@ -422,8 +422,106 @@ a{
 .accordion-open .questions__icon{
   transform: rotate(45deg);
 }
-      
+/*======================= CTA ============================*/      
+.cta__container{
+    align-items: center;
+    margin-top: 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    height: 15rem;
+    background-color: #7CCDE1;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 3rem 2rem 3rem 2rem;
+    overflow: hidden;
+}
 
+.cta__container h1{
+    font-family: var(--title-font);
+    font-size: 40px;
+    color: #00566B;
+}
+
+.cta__container p{
+    color: #F3F4FE;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cta__img img{
+    position: absolute;
+    width: 6%;
+    bottom: 0;
+    z-index: 4;
+}
+
+.cta__btm button {
+    padding: 0.80rem 2rem;
+    border-radius: 8px;
+    background-color: #F8EDE3;
+    color: #00566B;
+}
+
+.shape_1{
+    position: absolute;
+    border-radius: 40px;
+    width: 5rem;
+    height: 5rem;
+    background-color: aquamarine;
+    overflow: hidden;
+    top: -40px;
+    left: 10px;
+}
+.shape_2{
+    position: absolute;
+    border-radius: 40px;
+    width: 5rem;
+    height: 5rem;
+    background-color: #FCC7C3;
+    overflow: hidden;
+    top: -60px;
+    right: 5px;
+}
+
+.shape_3{
+    position: absolute;
+    border-radius: 40px;
+    width: 5rem;
+    height: 5rem;
+    background-color: #c89df0;
+    overflow: hidden;
+    top: 88px;
+    right: -35px;
+}
+/*===============FOOTER===============*/
+.footer{
+    margin-top: 10rem;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+}
+
+.footer__content h3{
+    font-family: var(--title-font);
+    font-size: 20px;
+}
+.footer__content a{
+    color: gray;
+    font-family: var(--body-font);
+    font-weight: 300;
+}
+
+.footer__subscribe
 /*=============== MEDIA QUERIS ===============*/
 @media screen and (max-width: 768px){
     body{
