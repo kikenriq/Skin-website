@@ -591,11 +591,12 @@ a{
     }
 
     .home__text{
-        padding: 0 8rem 0 0;
-        max-width: 985px;
+        padding: 0 2rem 0 0;
+        width: 320px;
     }
     .text__comp h4{
         font-size: 8px;
+        width: 200px;
     }
     .home__text h1{
         font-size: 70px;
