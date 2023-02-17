@@ -84,6 +84,10 @@ a{
     font-size: 0.90rem;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 .nav__link {
     display: inline-block;
     position: relative;
@@ -113,6 +117,7 @@ a{
     gap: 0.75rem;
     font-size: 1.2rem;
 }
+
 
 /*=============== HOME ===============*/
 .home{
@@ -173,8 +178,8 @@ a{
 }
 
 .shape__img img{
-    position: absolute;
-    left: 20rem;
+    width: 100%;
+    
 }
 /*=============== ABOUT ===============*/
 .about{
@@ -521,57 +526,144 @@ a{
     font-weight: 300;
 }
 
-.footer__subscribe
 /*=============== MEDIA QUERIS ===============*/
-@media screen and (max-width: 768px){
-    body{
-        margin: 1rem;
-    }
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem;
-        padding: 1rem;
+@media screen and (max-width: 767px){
+    .body{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .header{
-        width: 65vh;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 4;
+        padding: 0 2rem 0 2rem;
+
     }
+    .nav{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .nav__menu{
-      position: fixed;
-      top: -100%;
-      left: 0;
-      width: 100%;
-      padding: 1.5rem 0 1rem;
-      text-align: center;
-      background-color: var(--body-color);
-      transition: .4s;
-      box-shadow: 0 4px 4px rgba(0,0,0,.1);
-      border-radius: 0 0 1rem 1rem;
-      z-index: var(--z-fixed);
+        position: fixed;
+        background-color: #F3F4FE;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        transition: .3s;
+    }
+
+    .nav__links{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 3rem;
+    }
+
+    .nav__link{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-toggle{
+        cursor: pointer;
+        font-size: 25px;
+        display: inline-flex;
     }
 
     .home{
-        padding: 1rem;
-        margin: 1rem;
-        display: inline;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .home__text{
-        padding: 3rem 1rem;
+        padding: 0 1rem;
+        max-width: 985px;
     }
     .text__comp h4{
-        font-size: 10px;
+        font-size: 8px;
     }
-    .home__text h1 {
-        font-size: 5rem;
-        line-height: 4rem;
+    .home__text h1{
+        font-size: 70px;
+        line-height: 60px;
     }
     .home__text p{
-        font-size: 16px;
+        font-size: 15px;
     }
-  }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .about__text{
+        margin: 0;
+        padding: 0;
+    }
+
+    .about__title{
+        line-height: 42px;
+    }
+
+    .product_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        order: 1;
+    }
+
+    .product_img{
+        width: 100%;
+        order: 1;
+    }
+    .product_img img{
+        width: 50%;
+    }
+    .text__product{
+        order: 2;
+    }
+
+    .product-description{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .img-description img{
+        width: 100%;
+    }
+
+    .img__logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .costumer{
+        display: flex;
+        flex-direction: column;
+        padding: 0
+    }
+
+    .img__costumer img {
+        width: 80%;
+    }
+
+    .questions__container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+

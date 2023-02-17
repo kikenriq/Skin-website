@@ -27,3 +27,16 @@ const toggleItem = (item) =>{
     }
 
 }
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal('.home__text, .hero__img')
+sr.reveal('.product_img')
+sr.reveal('.img-description',{origin:'left'})
